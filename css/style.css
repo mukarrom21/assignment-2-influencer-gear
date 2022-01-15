@@ -141,6 +141,22 @@ button > i {
   padding: 30px 15px;
 }
 /* Populer collections start */
+/* contact */
+.contact .wrap {
+  height: 550px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: rgb(230, 240, 228);
+  color: #e02c6d;
+  font-size: 20px;
+  border-radius: 25px;
+}
+input {
+  padding: 10px 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px;
+}
 
 /* footer style start  */
 footer {
