@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 50px 0;
 }
 .wrap {
   width: 1024px;
@@ -22,14 +23,13 @@ body {
 a {
   text-decoration: none;
 }
-
-/* Header styles start  */
-
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* Header styles start  */
 .header-title h2 {
   font-size: 24px;
   font-weight: bold;
@@ -39,6 +39,11 @@ a {
   margin-right: 24px;
   font-size: 16px;
   font-weight: 600;
+  transition: .5s;
+}
+.menu a:hover {
+  color: #e02c6d;
+  font-weight: bolder;
 }
 /* Start Your Journey */
 .top-section .section-info {
@@ -62,6 +67,11 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 16px;
+  transition: 1s ease;
+}
+button:hover {
+  background-color: green;
+  color: #fff;
 }
 .image img {
   transition: 1s;
@@ -126,7 +136,7 @@ button > i {
 }
 .more,
 .more a {
-  color: #e02c6dde;
+  color: #e02c6d;
   font-weight: bold;
 }
 
@@ -143,13 +153,16 @@ button > i {
 /* Populer collections start */
 /* contact */
 .contact .wrap {
-  height: 550px;
-  margin: 100px auto;
+  padding: 20px;
+  margin:0 auto;
   text-align: center;
   background-color: rgb(230, 240, 228);
   color: #e02c6d;
   font-size: 20px;
   border-radius: 25px;
+}
+.contact-title, {
+  margin-top: 30px;
 }
 input {
   padding: 10px 40px;
@@ -157,6 +170,7 @@ input {
   text-align: center;
   margin: 10px;
 }
+textarea {margin-top: 15px;}
 
 /* footer style start  */
 footer {
@@ -223,8 +237,6 @@ footer > div > .social > a {
 @media screen and (max-width: 767px) {
   .wrap {
     width: 320px;
-  }
-  .header-title h2 {
   }
   .menu {
     display: none;
