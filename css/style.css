@@ -6,6 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* mobile view menu  */
+header.mobile-view {
+  display: none;
+}
 /* common styles or utilities*/
 body {
   font-family: "Poppins", sans-serif;
@@ -39,7 +43,7 @@ a {
   margin-right: 24px;
   font-size: 16px;
   font-weight: 600;
-  transition: .5s;
+  transition: 0.5s;
 }
 .menu a:hover {
   color: #e02c6d;
@@ -77,8 +81,8 @@ button:hover {
   transition: 1s;
 }
 .image img:hover {
-  -ms-transform: scale(1.5); 
-  -webkit-transform: scale(1.5); 
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 button > i {
@@ -154,14 +158,14 @@ button > i {
 /* contact */
 .contact .wrap {
   padding: 20px;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
   background-color: rgb(230, 240, 228);
   color: #e02c6d;
   font-size: 20px;
   border-radius: 25px;
 }
-.contact-title, {
+.contact-title {
   margin-top: 30px;
 }
 input {
@@ -170,7 +174,9 @@ input {
   text-align: center;
   margin: 10px;
 }
-textarea {margin-top: 15px;}
+textarea {
+  margin-top: 15px;
+}
 
 /* footer style start  */
 footer {
@@ -237,9 +243,18 @@ footer > div > .social > a {
 @media screen and (max-width: 767px) {
   .wrap {
     width: 320px;
+    margin: 0 auto;
   }
-  .menu {
+  header {
     display: none;
+  }
+  header.mobile-view {
+    display: block;
+  }
+  .mobile-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .top-section .wrap {
     display: flex;
